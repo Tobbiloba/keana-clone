@@ -68,7 +68,7 @@ const Menu = () => {
         setSelectedOption(event.target.value);
     };
     return (
-        <div className='bg-teal-900 shadow-md shadow-black container'>
+        <div className='bg-slate-800 shadow-md shadow-black container'>
             <div className=''>
                 <div className='py-4 flex flex-row justify-between items-center'>
                     <div>

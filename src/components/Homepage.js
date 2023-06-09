@@ -4,7 +4,7 @@ import background from '../assets/homepagebackground.webp';
 import stripe from '../assets/bg-vector.fabacc8e.svg'
 const Homepage = () => {
     return (
-        <div className=' bg-slate-500 w-[100vw] lg:h-[70vh]  md:h-[800px] h-[100vh]' >
+        <div className=' bg-slate-500 w-[100vw] lg:h-[70vh]  md:h-[800px] h-[100vh] overflow-y-hidden' >
             <div className='left-0 z-30 fixed  w-[100vw]'>
                 <Menu />
             </div>

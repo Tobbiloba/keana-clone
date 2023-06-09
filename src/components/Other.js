@@ -15,7 +15,7 @@ const Other = () => {
                     The logistics industry is rapidly advancing towards a future with fewer heavy trucks on the streets, resulting in reduced pollution and safer cities. Central to this progress is the emergence of distribution hubs. While distribution hubs offer a brilliant solution, they also introduce the challenge of multiple handlers utilizing various logistics software within the decentralized distribution chain, potentially causing congestion in the existing system.
                 </p>
             </div>
-            <div className='flex lg:hidden mt-4 md:hidden'>
+            <div className='flex lg:hidden mt-4 md:hidden border w-[100vw]'>
 
                 <img src="https://keana.io/assets/vector-nodes-green-mobile.8661594c.svg" alt="image" className='flex  lg:hidden' />
             </div>

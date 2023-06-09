@@ -10,7 +10,7 @@ const Homepage = () => {
             </div>
 
             <div className='flex  md:h-[800px]  flex-col md:flex-row overflow-hidden bg-slate-800  lg:h-[70vh] h-[100%]  '>
-                <div className='h-[50%] md:h-[100%] lg:pl-[15%]  mt-[80px] lg:h-[100%]  md:w-[50%]  px-[1.5rem] md:px-[2rem] flex flex-col justify-center'>
+                <div className='h-[50%] md:h-[100%] lg:pl-[15%]   mt-[80px] lg:h-[100%]  md:w-[50%]  px-[2rem] md:px-[2rem] flex flex-col justify-center'>
                     <h1 className='text-3xl font-mono font-bold lg:text-5xl text-slate-700'>Regain a full view on your logistics chain.</h1>
                     <p className='mt-6 font-bold text-slate-300'>Keana connects all possible transport software systems, resulting in a platform offering a single overview of the new decentralised distribution chain.</p>
                     <button className='mt-8 border w-fit px-6 rounded-[3rem] text-slate-200 bg-slate-400 py-4'>Learn more</button>

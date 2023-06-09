@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Homepage from "./components/Homepage";
 import Other from "./components/Other";
 function App() {
@@ -6,6 +7,7 @@ function App() {
 
       <Homepage />
       <Other />
+      <About />
     </div>
   );
 }

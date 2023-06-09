@@ -17,7 +17,7 @@ const Other = () => {
             </div>
             <div className='flex lg:hidden mt-4 md:hidden border w-[100vw]'>
 
-                <img src="https://keana.io/assets/vector-nodes-green-mobile.8661594c.svg" alt="image" className='flex  lg:hidden' />
+                <img src="https://keana.io/assets/vector-nodes-green-mobile.8661594c.svg" alt="image" className='flex  lg:hidden w-[100vw]' />
             </div>
 
             {/* <div className="h-full w-full md:h-[49rem] md:w-[80%] md:ml-[-12rem] xl:ml-0 xl:h-auto xl:w-[65%] xxl:w-[53%] absolute  left-0 hidden md:flex xxxl:hidden"><img className="h-full w-full object-cover" src="https://keana.io/assets/vector-nodes-green-mobile.8661594c.svg" alt="Vector lines with node points" data-v-adb24841 /></div> */}

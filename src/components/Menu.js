@@ -33,7 +33,7 @@ const DropDown = () => {
                 showOptions &&
                 <div className='w-[100vw] h-[100vh] left-0 top-0 flex justify-center items-center absolute'>
                     <div className='absolute top-0 left-0 w-[100vw] h-[100vh]' onClick={setOptions}></div>
-                    <div className=' bg-slate-500 rounded-2xl w-[80vw] overflow-hidden z-10' >
+                    <div className=' bg-slate-800 rounded-2xl w-[80vw] overflow-hidden z-10' >
                         {options.map((item) => {
                             return (
                                 <div key={item.id} className='px-4 py-3 border border-slate-500 border-b-white flex flex-row justify-between items-center' onClick={() => { setSelected(item.name) }}>
@@ -68,8 +68,8 @@ const Menu = () => {
         setSelectedOption(event.target.value);
     };
     return (
-        <div className='bg-slate-800  shadow-md shadow-black container max-w-[100vw] overflow-x-hidden w-[100vw]'>
-            <div className='lg:hidden'>
+        <div className='bg-slate-800 fixed h-[80px] lg:max-w-[100vw] shadow-md shadow-black px-[1.5rem] lg:px-[5rem]  w-[100vw]'>
+            <div className='lg:hidden md:hidden'>
                 <div className='py-4 flex flex-row justify-between items-center'>
                     <div>
                         <img src={logo} alt='keana Logo' className='w-40 cursor-pointer' />
@@ -89,7 +89,7 @@ const Menu = () => {
             {
                 toggleMenu
                 &&
-                <div className='absolute w-[100vw] left-0 lg:px-[4rem] z-auto top-0 py-6 h-[100vh] bg-slate-800 flex flex-col px-[2rem] justify-between lg:justify-normal'>
+                <div className='absolute w-[100vw] left-0 lg:px-[4rem] z-30 top-0 py-6 h-[100vh] bg-slate-800 flex flex-col px-[2rem] justify-between lg:justify-normal'>
                     <div className='flex justify-end'>
                         <img src={close} onClick={handleMenu} className='cursor-pointer' />
                     </div>
@@ -128,13 +128,14 @@ const Menu = () => {
                     <div></div>
                 </div>
             }
-            <div className='hidden lg:flex max-w-none w-[100vw] py-4  flex-row justify-between items-center'>
-                {/* <div className='py-4 flex flex-row justify-between items-center'> */}
+            <div className='hidden lg:flex md:flex  w-[100%] py-4  flex-row md:justify-evenly lg:justify-between items-center'>
+
                 <div>
                     <img src={logo} alt='keana Logo' className='w-40 cursor-pointer' />
                 </div>
-                <div className='ml-10'>
-                    <h1 className='text-[18px] font-bold text-white'>Call Us <span className='text-[17px] font-light ml-3'>+31 (0)85 40 10 738</span></h1>
+                <div></div>
+                <div className=''>
+                    <h1 className='text-[18px] flex md:flex-col lg:flex-row font-bold text-white'>Call Us <span className='text-[17px] font-light ml-3'>+31 (0)85 40 10 738</span></h1>
                 </div>
                 <button className='px-5 py-2 rounded-3xl text-white bg-slate-600'>Book a demo</button>
 
@@ -146,7 +147,6 @@ const Menu = () => {
                     <DropDown />
 
                 </div>
-                {/* </div> */}
             </div>
         </div>
     )

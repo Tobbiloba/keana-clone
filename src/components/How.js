@@ -8,13 +8,13 @@ const How = () => {
             <div className='hidden md:flex h-[inherit] lg:flex'>
                 <img src={stripe} alt="stripe" style={{ objectFit: 'cover' }} />
             </div>
-            <div className='px-[1.5rem] w-[100vw] md:h-fit'>
+            <div className='px-[1.5rem] lg:w-[50%] lg:mr-[10%] w-[100vw] md:h-fit'>
                 <h1 className='text-6xl text-white font-mono font-bold'>How we work</h1>
                 <p className='mt-[1.25rem] text-[18px] text-white leading-8'>When it comes to <span className='font-bold'>optimising</span> things in logistics, we always look at the bigger picture. This leads to a logistics platform that improves efficiency by default but is <span className='font-bold'>human-friendly </span>at the same time.</p>
                 <button className='mt-[2rem] border px-5 font-semibold py-3 text-white font-mono  rounded-3xl hover:bg-white hover:text-slate-800'>Learn more &gt;</button>
             </div>
-            <div className='md:hidden lg:hidden w-[100vw]'>
-                <img src={mobileStripe} alt="stripe" />
+            <div className='md:hidden lg:hidden w-[100vw] '>
+                <img src={mobileStripe} alt="stripe" style={{ objectFit: 'cover' }} className='w-[100%]' />
             </div>
 
         </div>

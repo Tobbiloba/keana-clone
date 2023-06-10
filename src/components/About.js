@@ -33,7 +33,7 @@ const About = () => {
             <h1 className=' text-slate-500 lg:text-center font-mono text-3xl font-bold'>
                 Keana is the solution: manage your shipments through all handlers.
             </h1>
-            <div className='mt-[5rem] lg:mt-[3rem] flex flex-col'>
+            <div className='md:mt-[5rem] lg:mt-[3rem] flex flex-col'>
                 {
                     object.map((item) => {
                         return (

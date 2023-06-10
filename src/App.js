@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import How from "./components/How";
 import Logo from "./components/Logo";
@@ -18,6 +19,7 @@ function App() {
       <How />
       <Roll />
       <Banner />
+      <Footer />
     </div>
   );
 }

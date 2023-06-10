@@ -6,7 +6,7 @@ const Review = () => {
     return (
         <div className=' w-[100vw] flex flex-col justify-center items-center overflow-hidden'>
             <div className='pt-[1rem] lg:py-[2rem]'>
-                <h1 className='text-2xl font-bold font-mono text-slate-500'>What our client says</h1>
+                <h1 className='text-4xl text-center mb-[2rem] md:text-left lg:text-left md:text-3xl lg:text-3xl font-bold font-mono text-slate-500'>What our client says</h1>
             </div>
             {/* <div className=" w-screen h-[80vh] border">
                 <ReactPlayer

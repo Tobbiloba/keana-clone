@@ -6,6 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Link } from 'react-router-dom';
 const DropDown = () => {
     const options = [
         {
@@ -99,10 +100,19 @@ const Menu = () => {
                                 <h1 className='font-light font-mono'>MENU</h1>
                             </div>
                             <div className='mt-10'>
-                                <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>HOME</h1>
-                                <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>PRODUCT</h1>
-                                <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>ABOUT US</h1>
-                                <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>CONTACT</h1>
+                                <Link to="/">
+                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>HOME</h1>
+                                </Link>
+                                <Link to="/product">
+                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>PRODUCT</h1>
+                                </Link>
+                                <Link to="/about">
+                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>ABOUT US</h1>
+                                </Link>
+                                <Link to="/contact">
+                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>CONTACT</h1>
+                                </Link>
+
                             </div>
                             <button className='border rounded-3xl px-3 py-2 font-mono mt-8 bg-gray-600'>Book a demo</button>
                         </div>

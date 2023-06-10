@@ -14,7 +14,7 @@ const Other = () => {
             </div>
             <div className=' px-[2rem] lg:h-fit z-10 lg:text-center md:bg-slate-500 pt-[2.5rem] bg-transparent md:w-[70%] md:h-[35rem] lg:w-[50%] h-fit '>
                 <h1 className='text-slate-700  text-4xl font-bold font-mono lg:hidden'>More handlers,<br />more problem</h1>
-                <h1 className='hidden lg:flex border justify-center text-slate-700 text-4xl font-bold font-mono'>More handlers, more problem</h1>
+                <h1 className='hidden lg:flex justify-center text-slate-700 text-4xl font-bold font-mono'>More handlers, more problem</h1>
                 <p className='mt-6 text-[18px] lg:text-[15px] leading-8 text-slate-300 '>
                     The logistics industry is rapidly advancing towards a future with fewer heavy trucks on the streets, resulting in reduced pollution and safer cities. Central to this progress is the emergence of distribution hubs. While distribution hubs offer a brilliant solution, they also introduce the challenge of multiple handlers utilizing various logistics software within the decentralized distribution chain, potentially causing congestion in the existing system.
                 </p>

@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Banner from "./components/Banner";
 import Homepage from "./components/Homepage";
 import How from "./components/How";
 import Logo from "./components/Logo";
@@ -16,6 +17,7 @@ function App() {
       <Logo />
       <How />
       <Roll />
+      <Banner />
     </div>
   );
 }

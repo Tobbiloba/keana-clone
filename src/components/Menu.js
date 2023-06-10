@@ -33,7 +33,7 @@ const DropDown = () => {
                 showOptions &&
                 <div className='w-[100vw] h-[100vh] left-0 top-0 flex justify-center items-center absolute'>
                     <div className='absolute top-0 left-0 w-[100vw] h-[100vh]' onClick={setOptions}></div>
-                    <div className=' bg-slate-800 rounded-2xl w-[80vw] overflow-hidden z-10' >
+                    <div className=' bg-slate-400 rounded-2xl w-[80vw] overflow-hidden z-10' >
                         {options.map((item) => {
                             return (
                                 <div key={item.id} className='px-4 py-3 border border-slate-500 border-b-white flex flex-row justify-between items-center' onClick={() => { setSelected(item.name) }}>

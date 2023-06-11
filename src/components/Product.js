@@ -158,6 +158,9 @@ import Insight from './Insight';
 import Improvement from './Improvement';
 import Accountability from './Accountability';
 import Difference from './Difference';
+import Roll from './Roll';
+import Banner from './Banner';
+import Footer from './Footer';
 
 const ScrollMenu = () => {
     const [activeSection, setActiveSection] = useState(null);
@@ -227,6 +230,9 @@ const ScrollMenu = () => {
             </div>
             <div>
                 <Difference />
+                <Roll />
+                <Banner />
+                <Footer />
             </div>
         </div>
     );

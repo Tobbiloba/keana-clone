@@ -1,17 +1,31 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/keana-logo.svg'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Footer = () => {
     return (
         <div className='bg-slate-800 w-[100vw] px-[2rem] md:px-[10%] py-[3rem] flex flex-row justify-between'>
             <div className='flex flex-col md:flex-row md:w-[35%] lg:w-[50%] lg:justify-evenly  justify-between '>
                 <div className='flex flex-col gap-3 '>
-                    <a className='text-white text-[17px] font-mono hover:text-slate-500'>Home</a>
-                    <a className='text-white text-[17px] font-mono hover:text-slate-500'>Product</a>
-                    <a className='text-white text-[17px] font-mono hover:text-slate-500'>About us</a>
+                    <Link to="/">
+                        <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>Home</h1>
+                    </Link>
+                    <Link to="/product">
+                        <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>Product</h1>
+                    </Link>
+                    <Link to="/about">
+                        <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>About us</h1>
+                    </Link>
+
                 </div>
                 <div className='flex flex-col mt-3 gap-3 md:mt-0'>
-                    <a className='text-white text-[17px] font-mono hover:text-slate-500'>Contact</a>
-                    <a className='text-white text-[17px] font-mono hover:text-slate-500'>LinkedIn</a>
+                    <Link to="/contact">
+                        <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>Contact</h1>
+                    </Link>
+                    <a href='https://www.linkedin.com/company/keana/' target='_blank' className='cursor-pointer'>
+                        <LinkedInIcon style={{ fontSize: '40px', color: 'white' }} className='mt-2' />
+                    </a>
+                    {/* <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>LinkedIn</h1> */}
                 </div>
             </div>
             <div className='gap-[3rem] flex flex-col md:flex-row md:w-[55%] lg:w-[50%] lg:justify-evenly'>

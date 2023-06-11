@@ -102,7 +102,7 @@ const Difference = () => {
                         }
                     </div>
                     <div className='hidden md:flex bg-black w-[1px]'></div>
-                    <div className='mt-[4rem]  items-start  md:flex flex-col py-[1.5rem] md:mt-0 md:w-fit'>
+                    <div className='mt-[4rem] text-right md:text-right items-start  md:flex flex-col py-[1.5rem] md:mt-0 md:w-fit'>
                         <h1 className='text-bold text-2xl mb-[1rem]  font-bold  text-slate-500'>Keana</h1>
                         {
                             Keana.map((items) => {

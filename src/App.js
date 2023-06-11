@@ -5,6 +5,8 @@ import Homepage from "./components/Homepage";
 import How from "./components/How";
 import Logo from "./components/Logo";
 import Other from "./components/Other";
+import ScrollMenu from "./components/Product";
+// import Product from "./components/Product";
 import ProductMenu from "./components/ProductMenu";
 import Review from "./components/Review";
 import Roll from "./components/Roll";
@@ -37,11 +39,11 @@ const AboutPage = () => {
     <div className="w-[100vw] h-[100vh] bg-black">About</div>
   )
 }
-const Product = () => {
+const ProductPage = () => {
   return (
-    <div className="w-[100vw] bg-slate-500 h-[350vh]">
-      <Homepage />
-      <ProductMenu />
+    <div className="">
+      {/* <Homepage /> */}
+      <ScrollMenu />
     </div>
   )
 }
@@ -53,7 +55,7 @@ const Contact = () => {
 
 const routes = [
   <Route path="/" element={<MainPage />} />,
-  <Route path="/product" element={<Product />} />,
+  <Route path="/product" element={<ProductPage />} />,
   <Route path="/about" element={<AboutPage />} />,
   <Route path="/contact" element={<Contact />} />,
 ]

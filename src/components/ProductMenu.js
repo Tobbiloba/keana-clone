@@ -98,8 +98,8 @@ const ProductMenu = ({ sections, activeSection, handleMenuItemClick }) => {
     };
 
     return (
-        <div style={containerStyles} ref={containerRef} className={`py-[1rem] ${isFixed ? 'mt-20' : 'mt-0'} bg-slate-800`}>
-            <ul className='text-center text-white font-mono gap-3 flex flex-col items-center'>
+        <div style={containerStyles} ref={containerRef} className={`py-[1rem] md:py-0 md:pt-[2rem] ${isFixed ? 'mt-20' : 'mt-0'} bg-slate-800`}>
+            <ul className='text-center text-white font-mono gap-3 flex flex-col items-center md:flex-row md:justify-center md:gap-5'>
                 {sections.map((section, index) => (
                     <li
                         key={index}

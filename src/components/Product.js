@@ -154,6 +154,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ProductMenu from './ProductMenu';
 import Homepage from './Homepage';
+import Insight from './Insight';
 
 const ScrollMenu = () => {
     const [activeSection, setActiveSection] = useState(null);
@@ -211,8 +212,8 @@ const ScrollMenu = () => {
             </nav>
             <div className='mt-0'>
                 {/* Replace the child components with your own */}
-                <div ref={(el) => (sectionsRef.current[0] = el)} style={{ height: '100vh', background: '#f1f1f1' }}>
-                    Section 1
+                <div ref={(el) => (sectionsRef.current[0] = el)} >
+                    <Insight />
                 </div>
                 <div ref={(el) => (sectionsRef.current[1] = el)} style={{ height: '100vh', background: '#ddd' }}>
                     Section 2

@@ -8,7 +8,7 @@ const Improvement = () => {
                 <p className='font-mono md:w-[45%] md:mt-0 leading-6 mt-4'>Through powerful planning tools, our platform nudges all participating handlers towards more efficient planning, lowering costs for everyone involved</p>
             </div>
             <div className='mt-[2.5rem] md:flex justify-between'>
-                <div className='border rounded-md overflow-hidden md:w-[50%]'>
+                <div className='rounded-md overflow-hidden md:w-[50%]'>
                     <img src={img} alt="image" className='' />
                 </div>
                 <div className='mt-[3rem] md:w-[45%] md:mt-0'>

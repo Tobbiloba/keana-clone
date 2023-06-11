@@ -155,6 +155,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ProductMenu from './ProductMenu';
 import Homepage from './Homepage';
 import Insight from './Insight';
+import Improvement from './Improvement';
 
 const ScrollMenu = () => {
     const [activeSection, setActiveSection] = useState(null);
@@ -215,8 +216,8 @@ const ScrollMenu = () => {
                 <div ref={(el) => (sectionsRef.current[0] = el)} >
                     <Insight />
                 </div>
-                <div ref={(el) => (sectionsRef.current[1] = el)} style={{ height: '100vh', background: '#ddd' }}>
-                    Section 2
+                <div ref={(el) => (sectionsRef.current[1] = el)}>
+                    <Improvement />
                 </div>
                 <div ref={(el) => (sectionsRef.current[2] = el)} style={{ height: '100vh', background: '#ccc' }}>
                     Section 3

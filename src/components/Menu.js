@@ -73,7 +73,10 @@ const Menu = () => {
             <div className='lg:hidden md:hidden'>
                 <div className='py-4 flex flex-row justify-between items-center'>
                     <div>
-                        <img src={logo} alt='keana Logo' className='w-40 cursor-pointer' />
+                        <Link to="/">
+                            <img src={logo} alt='keana Logo' className='w-40 cursor-pointer' />
+                        </Link>
+
                     </div>
                     <div className=''>
 

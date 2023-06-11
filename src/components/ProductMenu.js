@@ -34,18 +34,18 @@
 //     const containerStyles = {
 //         position: isFixed ? 'fixed' : 'relative',
 //         // marginTop: isFixed ? 'mt-[80' : 'mt-0',
-//         top: 85,
+//         top: 0,
 //         width: '100%',
 //     };
 
 
 //     return (
-//         <div style={containerStyles} ref={containerRef} className='border border-red-500'>
+//         <div style={containerStyles} ref={containerRef} className={` ${isFixed ? 'mt-20' : 'mt-0'}`}>
 //             <ul>
 //                 {sections.map((section, index) => (
 //                     <li
 //                         key={index}
-//                         className={`${index === activeSection ? 'active' : ''} text-xl font-bold`}
+//                         className={`${index === activeSection ? 'active text-red-500' : ''} text-xl `}
 //                         onClick={() => handleMenuItemClick(index)}
 //                     >
 //                         <a href={`#section-${index + 1}`}>{section}</a>
@@ -69,7 +69,12 @@ const ProductMenu = ({ sections, activeSection, handleMenuItemClick }) => {
     useEffect(() => {
         const handleScroll = () => {
             const containerTop = containerRef.current.getBoundingClientRect().top;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             setIsFixed(containerTop <= 85);
+
+            if (scrollTop < containerHeightRef.current) {
+                setIsFixed(false);
+            }
         };
 
         const handleResize = () => {
@@ -86,21 +91,24 @@ const ProductMenu = ({ sections, activeSection, handleMenuItemClick }) => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
     const containerStyles = {
-        position: 'sticky',
-        top: isFixed ? 85 : 0,
+        position: isFixed ? 'fixed' : 'relative',
+        top: 0,
         width: '100%',
-        zIndex: 1,
     };
 
     return (
-        <div style={containerStyles} ref={containerRef} className="border border-red-500">
-            <ul>
+        <div style={containerStyles} ref={containerRef} className={`py-[1rem] ${isFixed ? 'mt-20' : 'mt-0'} bg-slate-800`}>
+            <ul className='text-center text-white font-mono gap-3 flex flex-col items-center'>
                 {sections.map((section, index) => (
                     <li
                         key={index}
-                        className={`${index === activeSection ? 'active' : ''} text-xl font-bold`}
+                        className={`text-xl border-2 border-slate-800 ${index === activeSection
+                            ? `active w-fit px-2 ${activeSection === 0 ? 'border-b-red-500' : activeSection === 1 ? 'border-b-green-500' : activeSection === 2 ? 'border-b-blue-500' : ''}`
+                            : ''
+                            }`}
+                        // className={`${index === activeSection ? {`active  w-fit px-2 ${item.name === '' ? '' : ''}}` : ''} text-xl`}
+
                         onClick={() => handleMenuItemClick(index)}
                     >
                         <a href={`#section-${index + 1}`}>{section}</a>

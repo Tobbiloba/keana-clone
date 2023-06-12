@@ -152,15 +152,15 @@
 
 
 import React, { useState, useEffect, useRef } from 'react';
-import ProductMenu from './ProductMenu';
+import ProductMenu from '../components/ProductMenu';
 import Homepage from './Homepage';
-import Insight from './Insight';
-import Improvement from './Improvement';
-import Accountability from './Accountability';
-import Difference from './Difference';
-import Roll from './Roll';
-import Banner from './Banner';
-import Footer from './Footer';
+import Insight from '../components/Insight';
+import Improvement from '../components/Improvement';
+import Accountability from '../components/Accountability';
+import Difference from '../components/Difference';
+import Roll from '../components/Roll';
+import Banner from '../components/Banner';
+import Footer from '../components/Footer';
 
 const ScrollMenu = () => {
     const [activeSection, setActiveSection] = useState(null);

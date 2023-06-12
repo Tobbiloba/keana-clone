@@ -1,11 +1,11 @@
 import About from "./components/About";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
-import Homepage from "./components/Homepage";
+import Homepage from "./screen/Homepage";
 import How from "./components/How";
 import Logo from "./components/Logo";
 import Other from "./components/Other";
-import ScrollMenu from "./components/Product";
+import ScrollMenu from "./screen/Product";
 // import Product from "./components/Product";
 import ProductMenu from "./components/ProductMenu";
 import Review from "./components/Review";
@@ -18,6 +18,8 @@ import {
   Route,
   RouterProvider,
 } from 'react-router-dom'
+import AboutusPage from "./screen/AboutPage";
+import ContactPage from "./screen/ContactPage";
 
 const MainPage = () => {
   return (
@@ -36,20 +38,23 @@ const MainPage = () => {
 }
 const AboutPage = () => {
   return (
-    <div className="w-[100vw] h-[100vh] bg-black">About</div>
+    <div className="">
+      <AboutusPage />
+    </div>
   )
 }
 const ProductPage = () => {
   return (
     <div className="">
-      {/* <Homepage /> */}
       <ScrollMenu />
     </div>
   )
 }
 const Contact = () => {
   return (
-    <div className="w-[100vw] h-[100vh] bg-red-500">Contact</div>
+    <div className="">
+      <ContactPage />
+    </div>
   )
 }
 

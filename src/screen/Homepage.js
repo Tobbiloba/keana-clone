@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from './Menu'
+import Menu from '../components/Menu'
 import background from '../assets/homepagebackground.webp';
 import stripe from '../assets/bg-vector.fabacc8e.svg'
 import img from '../assets/phone-on-bicycle-for-mobile.eddb4bfb.webp'

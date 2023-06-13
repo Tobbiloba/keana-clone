@@ -8,12 +8,6 @@ const Other = () => {
     }, []);
     return (
         <div className='w-[100vw] bg-slate-500 lg:justify-center lg:items-center z-30 lg:flex flex-row lg:h-[450px] md:flex md:justify-end md:h-[35rem]'>
-            {/* <div className='hidden lg:flex  w-[45%] overflow-hidden'>
-
-            </div> */}
-            {/* <div className='border absolute'>
-                <img src={img} className='absolute' />
-            </div> */}
             <div className='absolute left-0 overflow-hidden w-[60vw] md:w-[40vw] hidden lg:hidden md:flex md:h-[35rem]'>
                 <img src="https://keana.io/assets/vector-nodes-green.937a46d6.svg" alt="image" className='max-w-none relative md:w-[75rem]' />
             </div>

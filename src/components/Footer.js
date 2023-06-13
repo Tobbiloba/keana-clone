@@ -30,7 +30,6 @@ const Footer = () => {
                     <a href='https://www.linkedin.com/company/keana/' target='_blank' className='cursor-pointer'>
                         <LinkedInIcon style={{ fontSize: '40px', color: 'white' }} className='mt-2' />
                     </a>
-                    {/* <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>LinkedIn</h1> */}
                 </div>
             </div>
             <div className='gap-[3rem] flex flex-col md:flex-row md:w-[55%] lg:w-[50%] lg:justify-evenly' data-aos="fade-right">

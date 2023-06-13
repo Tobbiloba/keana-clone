@@ -91,7 +91,7 @@ const Menu = () => {
                         <DropDown />
 
                     </div>
-                    <div>
+                    <div className='cursor-pointer'>
                         <img src={menu} alt='menu icon' onClick={handleMenu} />
                     </div>
                 </div>

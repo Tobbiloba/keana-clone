@@ -7,6 +7,7 @@ import Roll from '../components/Roll';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
+import GoogleMapComponent from '../components/GoogleMapComponent';
 const ContactPage = () => {
     return (
         <div className='max-w-[100vw]'>
@@ -15,6 +16,7 @@ const ContactPage = () => {
             <ContactHome />
             <ScheduleMeeting />
             <ContactForm />
+            <GoogleMapComponent />
             <Roll />
             <Banner />
             <Footer />

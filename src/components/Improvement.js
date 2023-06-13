@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import img from '../assets/improvement.ed3d5e71.svg'
 const Improvement = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
-        <div className='w-[100vw] px-[1.5rem] md:px-[2rem] lg:px-[10%] py-[5rem]'>
+        <div data-aos="fade-up" className='w-[100vw] px-[1.5rem] md:px-[2rem] lg:px-[10%] py-[5rem]'>
             <div className='border-2 border-white border-b-green-500 pb-10 px-3 md:flex justify-between'>
                 <h1 className='text-[30px] md:w-[50%] text-green-600 font-mono font-bold'>Improve efficiency, lower costs.</h1>
                 <p className='font-mono md:w-[45%] md:mt-0 leading-6 mt-4'>Through powerful planning tools, our platform nudges all participating handlers towards more efficient planning, lowering costs for everyone involved</p>

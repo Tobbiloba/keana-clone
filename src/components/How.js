@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import stripe from '../assets/stripe.svg'
 import mobileStripe from '../assets/mobilestripe.svg'
 
 const How = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
-        <div className=' w-[100vw] h-[100vh] md:h-[30rem] bg-slate-800 flex flex-col md:flex-row justify-between md:items-center pt-[3rem] md:pt-0 overflow-hidden'>
+        <div data-aos="fade-up" data-aos-delay="200" className=' w-[100vw] h-[100vh] md:h-[30rem] bg-slate-800 flex flex-col md:flex-row justify-between md:items-center pt-[3rem] md:pt-0 overflow-hidden'>
             <div className='hidden md:flex h-[inherit] lg:flex'>
                 <img src={stripe} alt="stripe" style={{ objectFit: 'cover' }} />
             </div>

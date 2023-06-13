@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import people from '../assets/colleagues-holding-device-large.d5a93fe3.webp';
 import bicycle from '../assets/electric-bicycle.8798acaa.webp';
 import laptop from '../assets/dashboard-on-screen.ca665204.webp'
@@ -28,6 +30,10 @@ const About = () => {
 
 
     ]
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <div className='bg-white py-[4rem] w-[100vw] px-[2rem] lg:px-[25%] md:px-[10%]'>
             <h1 className=' text-slate-500 lg:text-center font-mono text-3xl font-bold'>
@@ -37,7 +43,7 @@ const About = () => {
                 {
                     object.map((item) => {
                         return (
-                            <div key={item.id} className={`flex md:justify-between mt-[6rem] flex-col justify-center items-center ${item.flex === 'right' ? 'lg:flex-row md:flex-row' : 'lg:flex-row-reverse md:flex-row-reverse'}`}>
+                            <div key={item.id} data-aos="fade-up" className={`flex md:justify-between mt-[6rem] flex-col justify-center items-center ${item.flex === 'right' ? 'lg:flex-row md:flex-row' : 'lg:flex-row-reverse md:flex-row-reverse'}`}>
                                 <div className='w-[18rem] h-[18rem] rounded-full overflow-hidden'>
                                     <img src={item.img} alt='image' className='w-[100%] h-3s120%] rounded-full' />
                                 </div>

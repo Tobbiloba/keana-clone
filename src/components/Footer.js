@@ -1,25 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom'
 import logo from '../assets/keana-logo.svg'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Footer = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <div className='bg-slate-800 w-[100vw] px-[2rem] md:px-[10%] py-[3rem] flex flex-row justify-between'>
             <div className='flex flex-col md:flex-row md:w-[35%] lg:w-[50%] lg:justify-evenly  justify-between '>
                 <div className='flex flex-col gap-3 '>
-                    <Link to="/">
+                    <Link to="/" data-aos="fade-right">
                         <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>Home</h1>
                     </Link>
-                    <Link to="/product">
+                    <Link to="/product" data-aos="fade-right" data-aos-delay="50">
                         <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>Product</h1>
                     </Link>
-                    <Link to="/about">
+                    <Link to="/about" data-aos="fade-right" data-aos-delay="100">
                         <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>About us</h1>
                     </Link>
 
                 </div>
                 <div className='flex flex-col mt-3 gap-3 md:mt-0'>
-                    <Link to="/contact">
+                    <Link to="/contact" data-aos="fade-right" data-aos-delay="150">
                         <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>Contact</h1>
                     </Link>
                     <a href='https://www.linkedin.com/company/keana/' target='_blank' className='cursor-pointer'>
@@ -28,7 +33,7 @@ const Footer = () => {
                     {/* <h1 className='text-white text-[17px] font-mono hover:text-slate-500'>LinkedIn</h1> */}
                 </div>
             </div>
-            <div className='gap-[3rem] flex flex-col md:flex-row md:w-[55%] lg:w-[50%] lg:justify-evenly'>
+            <div className='gap-[3rem] flex flex-col md:flex-row md:w-[55%] lg:w-[50%] lg:justify-evenly' data-aos="fade-right">
                 <div className='text-white text-[16px] gap-3 flex flex-col'>
                     <h1>Keana BV</h1>
                     <h1>c/o City Hub <br />Holding</h1>

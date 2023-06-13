@@ -1,4 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 import logo from '../assets/keana-logo.svg'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
@@ -68,6 +73,9 @@ const Menu = () => {
     const handleOptionChange = (event) => {
         setSelectedOption(event.target.value);
     };
+    useEffect(() => {
+        AOS.init();
+    }, [toggleMenu]);
     return (
         <div className='bg-slate-800 fixed h-[80px] z-50 lg:max-w-[100vw] shadow-md shadow-black px-[1.5rem] lg:px-[5rem]  w-[100vw]'>
             <div className='lg:hidden md:hidden'>
@@ -93,7 +101,7 @@ const Menu = () => {
             {
                 toggleMenu
                 &&
-                <div className='absolute w-[100vw] left-0 lg:px-[4rem] z-30 top-0 py-6 h-[100vh] bg-slate-800 flex flex-col px-[2rem] justify-between lg:justify-normal'>
+                <div className='absolute w-[100vw] left-0 lg:px-[4rem] z-30 top-0 py-6 h-[100vh] bg-slate-800 flex flex-col px-[2rem] justify-between lg:justify-normal' data-aos="fade-down">
                     <div className='flex justify-end'>
                         <img src={close} onClick={handleMenu} className='cursor-pointer' />
                     </div>
@@ -104,22 +112,22 @@ const Menu = () => {
                             </div>
                             <div className='mt-10'>
                                 <Link to="/">
-                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>HOME</h1>
+                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white' data-aos="fade-right" data-aos-delay="100">HOME</h1>
                                 </Link>
                                 <Link to="/product">
-                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>PRODUCT</h1>
+                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white' data-aos="fade-right" data-aos-delay="200">PRODUCT</h1>
                                 </Link>
                                 <Link to="/about">
-                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>ABOUT US</h1>
+                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white' data-aos="fade-right" data-aos-delay="300">ABOUT US</h1>
                                 </Link>
                                 <Link to="/contact">
-                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white'>CONTACT</h1>
+                                    <h1 className='mt-3 text-xl font-light font-mono text-slate-400 hover:text-white' data-aos="fade-right" data-aos-delay="400">CONTACT</h1>
                                 </Link>
 
                             </div>
-                            <button className='border rounded-3xl px-3 py-2 font-mono mt-8 bg-gray-600'>Book a demo</button>
+                            <button className='border rounded-3xl px-3 py-2 font-mono mt-8 bg-gray-600' data-aos="fade-right" data-aos-delay="500">Book a demo</button>
                         </div>
-                        <div className='w-[35%] lg:w-[40%]'>
+                        <div className='w-[35%] lg:w-[40%]' data-aos="fade-left">
                             <div className='border py-1 border-slate-800 border-b-white'>
                                 <h1 className='font-light font-mono'>CONTACT</h1>
                             </div>

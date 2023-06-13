@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import img from '../assets/insight.3f2cf167.svg'
 const Insight = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
-        <div className='w-[100vw] bg-cyan-100 px-[1.5rem] py-[5rem] md:px-[2rem] lg:px-[10%]'>
+        <div data-aos="fade-up" className='w-[100vw] bg-cyan-100 px-[1.5rem] py-[5rem] md:px-[2rem] lg:px-[10%]'>
             <div className='border-2 border-cyan-100 border-b-slate-500 pb-10 px-3 md:flex justify-between'>
-                <h1 className='text-[30px] md:w-[50%] border font-mono text-slate-500 font-bold'>Insight into your distribution chain</h1>
+                <h1 className='text-[30px] md:w-[50%] font-mono text-slate-500 font-bold'>Insight into your distribution chain</h1>
                 <p className='font-mono md:w-[45%] md:mt-0 leading-6 mt-4'>Keana connects all possible software systems, resulting in a single decentralised distribution chain.</p>
             </div>
             <div className='mt-[2.5rem] md:flex justify-between'>

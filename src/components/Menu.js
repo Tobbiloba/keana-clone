@@ -69,7 +69,7 @@ const Menu = () => {
         setSelectedOption(event.target.value);
     };
     return (
-        <div className='bg-slate-800 fixed h-[80px] lg:max-w-[100vw] shadow-md shadow-black px-[1.5rem] lg:px-[5rem]  w-[100vw]'>
+        <div className='bg-slate-800 fixed h-[80px] z-50 lg:max-w-[100vw] shadow-md shadow-black px-[1.5rem] lg:px-[5rem]  w-[100vw]'>
             <div className='lg:hidden md:hidden'>
                 <div className='py-4 flex flex-row justify-between items-center'>
                     <div>

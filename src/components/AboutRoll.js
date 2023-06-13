@@ -10,7 +10,7 @@ const AboutRoll = () => {
         /* Add other background properties as needed */
     };
     return (
-        <div className='bg-slate-700 w-[100vw] px-[1.5rem] flex items-center overflow-hidden h-[100vh]' >
+        <div className='bg-slate-700 w-[100vw] px-[1.5rem] md:px-[10%] flex items-center overflow-hidden h-[100vh]' >
             {/* <div className='z-auto'>
                 <Menu />
             </div> */}
@@ -25,8 +25,8 @@ const AboutRoll = () => {
 
             </div> */}
             <div className='z-20'>
-                <h1 className='text-7xl text-slate-200 font-mono font-black'>Let it <br /> roll</h1>
-                <p className='mt-[2rem] text-white font-mono'>Let's unclog the new decentralised distribution chain.</p>
+                <h1 className='text-8xl lg:w-fit md:w-[25rem] text-slate-200  font-black'>Let it roll</h1>
+                <p className='mt-[2rem] text-white font-mono md:w-[20rem] lg:w-fit'>Let's unclog the new decentralised distribution chain.</p>
             </div>
         </div>
     )

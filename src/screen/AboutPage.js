@@ -5,7 +5,7 @@ import AboutRoll from '../components/AboutRoll'
 const AboutusPage = () => {
     return (
         <div>
-            {/* <Menu /> */}
+            <Menu />
             <AboutRoll />
         </div>
     )
